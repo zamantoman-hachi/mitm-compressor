@@ -42,11 +42,11 @@ ZSTD_LEVEL = 11
 BROTLI_QUALITY = 6
 GZIP_LEVEL = 6          # 改善: デフォルト(9)から変更。速度と圧縮率のバランス
 WORKER_THREADS = 2
-STACK_DIR = Path("/home/abraxas/mitm/stack")
+STACK_DIR = Path("/path/to/save/file")
 STACK_DIR.mkdir(parents=True, exist_ok=True)
 
 # AdBlock設定
-FILTER_DIR = "/etc/ads/filters"
+FILTER_DIR = "/path/to/filter/file"
 POLL_INTERVAL = 5.0
 HTML_SIZE_LIMIT = 512 * 1024
 INJECT_CSS = "/* injected hide rules */ .ad, .ads, [id*=\"ad\"]{display:none!important}"
